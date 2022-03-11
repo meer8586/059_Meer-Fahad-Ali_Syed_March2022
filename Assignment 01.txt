@@ -1,0 +1,350 @@
+
+1. 
+class EvenOdd
+{
+public static void main(String[] args)
+ {
+   int a=8;
+    if((a%2)==0)
+    {
+      System.out.println("Given Number is Even");
+      return;
+    }
+ System.out.println("Given Number is Odd");
+    }
+}
+-------------------------------------------------------------------------------------------------------
+
+2. 
+class Factorial 
+{
+    static public void main(String [] args)
+    {
+       int n=5; 
+       int sum=1; 
+	
+       for(int i=1; i<=n;i++)
+       {
+         sum=sum*i;
+       }
+		
+     System.out.println(sum);
+    }
+}  
+-------------------------------------------------------------------------------------------------------
+
+4. 
+class Swap{
+
+    static public void main(String[] args)
+    {
+    int n1=15;
+    int n2=30;
+    System.out.println("Before Swap Number1 is: "+n1);
+    System.out.println("Before Swap Number2 is: "+n2);
+		
+    int no1=(n1+n2)-n1;
+    int no1=(n1+n2)-n2;
+		
+    n1=no1;
+    n2=no2;
+    System.out.println("After swap : "+n1);
+    System.out.println("After swap : "+n2);
+    }
+}
+-------------------------------------------------------------------------------------------------------
+5. 
+class PositiveOrNeg{
+
+    public static void main(String[] args)
+    {
+     int n=-8;
+     if(n>0)
+     {
+      System.out.println("positive number");
+     }
+    else if(n<0)
+    {
+       System.out.println("negative number");
+    }
+    else
+    {
+     System.out.println("Invalid Number");
+    }				
+ }
+}
+
+-------------------------------------------------------------------------------------------------------
+6. 
+class Leap
+{
+  public static void main(String[] args)
+  {
+  int y=400;
+		
+  if((y%4)==0)
+  {
+   if(y%100==0)
+   {
+     if(y%400==0)
+     {
+  System.out.println("Given number is leap year");	
+     }
+   }
+  }
+  else
+  {
+    System.out.println("Given number is not a leap year");
+  }
+ }
+}
+-------------------------------------------------------------------------------------------------------
+7.  
+
+class Numbers
+{
+   public static void main(String[] args){
+   System.out.println("1");
+   System.out.println("2");
+   System.out.println("3");
+   System.out.println("4");
+   System.out.println("5"); 
+   System.out.println("6");
+   System.out.println("7");
+   System.out.println("8");
+   System.out.println("9");
+   System.out.println("10");
+}
+}
+-------------------------------------------------------------------------------------------------------
+8. 
+
+class Digits
+{
+  public static void main(String[] args){
+  int no = 5475, count=0;
+		
+  while(n>0)
+  {
+  no=no/10;
+  count++;
+  }
+ System.out.println(count);
+}
+}
+-------------------------------------------------------------------------------------------------------
+9. 
+class Factor
+{
+  public static void main(String[] args)
+ {	
+  int n=100;
+  for(int i=1; i<=n; i++)
+  {
+      if(n%i==0)
+      {
+       System.out.print(i+" ");
+      }
+  }
+}
+}
+-------------------------------------------------------------------------------------------------------
+
+10. 
+class SumOfDigits
+{
+  public static void main(String[] args)
+  {
+    int n=199,r,sum=0;		
+    while(n>0)
+    {
+      r=n%10;
+      sum=sum+r;
+      n=n/10;
+    }
+  System.out.println("Sum of Digits is: "+sum);
+  }
+}
+-------------------------------------------------------------------------------------------------------
+
+11. 
+class Small
+{
+ public static void main(String[] args)
+ {
+   int a=5;
+   int b= 2;
+   int c=10;
+    if(a<b && a<c)
+      System.out.println("a is smallest "+a);
+    else if(b<a && b<c)
+      System.out.println("b is smallest "+b);
+    else 
+       System.out.println("c is smallest "+c);
+     }
+}
+-------------------------------------------------------------------------------------------------------
+12. 
+class Add
+{
+  public static void main(String[] args)
+  {
+   int a=10;
+   int b=20;
+     a+=b;
+   System.out.println(a);
+   }
+}
+-------------------------------------------------------------------------------------------------------
+
+13. Write a java program to Reverse a given number. 
+
+class Reverse
+{
+  public static void main(String[] args)
+  {
+   int n=321,r;
+   while(n>0)
+   {
+      r=n%10;
+     System.out.print(r);
+      n=n/10;	
+    }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------
+14. 
+class Gcd
+{
+  public static void main(String[] args)
+  {
+    int num1=15, num2=70, lcm;
+		
+    lcm =(num1>num2) ? num1:num2;
+		
+    while(true)
+    {
+     if(lcm%num1==0 && lcm%num2==0)
+     {   
+       System.out.println(lcm);
+         break;
+      }
+     ++lcm;
+     }
+    int gcd=(num1*num2)/lcm;       
+		
+   System.out.println("GCD of tho numbers is : "+gcd);
+   }
+}
+-------------------------------------------------------------------------------------------------------
+15. 
+class Lcm
+{
+ public static void main(String[] args)
+ {
+    int number1=24, number2=72, lcm;
+		
+    lcm=(number1>number2) ? number1:number2;
+    while(true)
+     {
+        if(lcm%number1==0 && lcm%number2==0)
+         {
+           System.out.println("LCM of given two numbers is :"+lcm);
+	break;
+          }
+        ++lcm;
+      }
+   }
+}
+-------------------------------------------------------------------------------------------------------
+16. 
+class LcmFact
+{
+  public static void main(String[] args)
+  {
+     int num1=50, num2=70, lcm;
+     lcm =(num1>num2) ? num1:num2;
+		
+    while(true)
+    {
+    if(lcm%num1==0 && lcm%num2==0)
+       {   
+         System.out.println(lcm);
+          break;
+        }
+     ++lcm;
+     }
+   }
+}
+-------------------------------------------------------------------------------------------------------
+17. 
+class Palindrome
+{
+ public static void main(String[] args)
+ {
+   int i=0, z=12321;
+   int n=z;
+   while(n>0)
+   {
+    int rev=n%10;
+    n=n/10;
+    i=(10*i)+rev;
+    }
+   if(i==z)
+   {
+    System.out.println("Palindrome");
+   } 
+   else 
+   {
+     System.out.println("not Palindrome");
+   }
+  }
+}
+-------------------------------------------------------------------------------------------------------
+18. 
+class PrimeFactor
+{
+  public static void main(String[] args)
+  {
+   int number=315;	
+   for(int i=2;i<=number;i++)
+   {		
+    while(number%i==0)
+    {
+     number=number/i;
+     System.out.println(i);
+     }
+    }
+  }
+}
+-------------------------------------------------------------------------------------------------------
+19. 
+class EvenSeries
+{
+ public static void main(String[] args)
+ {
+   for (int i=0; i<=20;i++)
+   {
+       i=i+2;		   
+       System.out.println(i);
+       i--;
+   }	  	
+  }
+}
+-------------------------------------------------------------------------------------------------------
+20. 
+class OddSeries
+{
+ public static void main(String[] args)
+ {
+   for (int i=1; i<=20;i++)
+   {
+      if(i%2!=0)
+      {
+       System.out.println(i);
+      }
+    }	  	
+  }
+}
+-------------------------------------------------------------------------------------------------------
