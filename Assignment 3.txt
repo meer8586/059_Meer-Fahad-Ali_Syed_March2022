@@ -1,0 +1,944 @@
+Q. 1.
+=====
+/*
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+*/
+
+class P1
+{
+ public static void main(String [] args)
+ {
+  for(int i=1; i<=5; i++)
+  {
+   for(int j=1; j<=i; j++)
+   {
+    System.out.print(j+" ");
+   }
+   System.out.println();
+  }
+ }
+}
+
+
+Q.2.
+=====
+/*
+A
+A B
+A B C
+A B C D
+A B C D E
+*/
+class P2
+{
+ public static void main(String [] args)
+ {
+	 
+  for(int i=65; i<=69; i++)
+  {
+   for(int j=65; j<=i; j++)
+   {
+    System.out.print((char)j+" ");
+	
+   }
+   System.out.println();
+  }
+ }
+}
+
+
+Q.3.
+=====
+/*
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+class P3
+{
+ public static void main(String [] args)
+ {
+	 
+  for(int i=65; i<=69; i++)
+  {
+   for(int j=65; j<=i; j++)
+   {
+    System.out.print("* ");
+	
+   }
+   System.out.println();
+  }
+ }
+}
+
+
+Q.4.
+=====
+/*
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+*/
+class P4
+{
+ public static void main(String [] args)
+ {
+	 
+  for(int i=1; i<=5; i++)
+  {
+   for(int j=1; j<=i; j++)
+   {
+    System.out.print(i+" ");
+	
+   }
+   System.out.println();
+  }
+ }
+}
+
+
+Q.5.
+=====
+/*
+A
+B B
+C C C
+D D D D
+E E E E E
+*/
+class P5
+{
+ public static void main(String [] args)
+ {
+	 
+  for(int i=65; i<=69; i++)
+  {
+   for(int j=65; j<=i; j++)
+   {
+    System.out.print((char)i+" ");
+	
+   }
+   System.out.println();
+  }
+ }
+}
+
+
+Q.6.
+=====
+/*
+          *
+        * *
+      * * *
+    * * * *
+  * * * * *
+*/
+class P6
+{
+ public static void main(String [] args)
+ {
+	 
+  for(int i=5; i>=1; i--)
+  {
+   for(int j=1; j<=i; j++)
+   {
+    System.out.print(" ");
+	
+   }
+   for(int l=5; l>=i; l--)
+   {
+	   System.out.print("*");
+   }
+   System.out.println();
+  }
+ }
+}
+
+
+Q.7.
+=====
+/*
+     1
+    1 2
+   1 2 3
+  1 2 3 4
+ 1 2 3 4 5
+*/
+class P7
+{
+ public static void main(String [] args)
+ {
+	 
+  for(int i=1;i<=5;i++)
+   {
+   for(int l=4;l>=i;l--)//Column 
+    {
+     System.out.print(" ");
+    }
+   
+   for(int j=1;j<=i;j++)//Column 
+    {
+     System.out.print(""+j+" ");
+    }
+			
+   System.out.println();
+   }
+ }
+}
+
+
+Q.8.
+=====
+/*
+     5
+    4 5
+   3 4 5
+  2 3 4 5
+ 1 2 3 4 5
+*/
+class P8
+{
+ public static void main(String [] args)
+ {
+
+  for(int i=5;i>=1;i--)
+  {
+   for(int l=1;l<=i;l++)
+    {
+     System.out.print(" ");
+    }
+	  
+    for(int j=i; j<=5;j++)
+     {
+      System.out.print(""+j+" ");
+      }
+   System.out.println();
+   }
+ }
+}
+
+
+
+Q.9.
+=====
+/*
+     A
+    A B
+   A B C
+  A B C D
+ A B C D E
+*/
+class P9
+{
+ public static void main(String[] args)
+ {
+  for(int i=65;i<=69;i++)
+   {
+    for(int k=69;k>=i;k--)
+     {
+      System.out.print(" ");
+     }
+    for(char j=65;j<=i;j++)
+     {
+      System.out.print(j+" ");
+     }		 
+    System.out.println();
+    }
+  }
+}
+
+
+Q.10.
+======
+/*
+     E
+    D E
+   C D E
+  B C D E
+ A B C D E
+*/
+class P10
+{
+ public static void main(String[] args)
+ {
+  for(int i=69;i>=65;i--)
+   {
+    for(int k=i;k>=65;k--)
+     {
+      System.out.print(" ");
+     }
+    for(int j=i;j<=69;j++)
+     {
+      System.out.print((char)j+" ");
+     }
+    System.out.println(); 
+   }
+  }
+}
+
+
+Q.11.
+=====
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*/
+class P11
+{
+ public static void main(String[] args)
+  {
+   for(int i=1;i<=9;i++)
+    {
+     for(int k=9;k>=i;k--)
+      {
+        if(k%2==0)
+         {
+          System.out.print(" ");
+         }
+       }
+     for(int j=1;j<=i;j++)
+      {
+        if(i%2!=0)
+         {
+           System.out.print("*");
+         }   	
+       }
+     if(i%2==0)
+      {
+      System.out.println();
+      }
+    }
+  }   
+}
+
+
+
+Q.12.
+======
+/*
+     1
+    2 2
+   3 3 3
+  4 4 4 4
+ 5 5 5 5 5
+*/
+class P12
+{
+ public static void main(String[] args)
+  {
+    int k=1;
+    for(int i=1;i<=5;i++)
+     {
+      for(int z=5;z>=i;z--)
+      {
+       System.out.print(" ");
+       }	
+       for(int j=1;j<=i;j++)
+        {
+         System.out.print(k+" ");
+         }
+       k++;
+     System.out.println();
+     }
+  }
+}
+
+
+Q.13.
+======
+/*
+     A
+    B B
+   C C C
+  D D D D
+ E E E E E
+
+class P13
+{
+ public static void main(String[] args)
+  {
+    int k=65;
+    for(int i=1;i<=5;i++)
+     {
+      for(int w=5;w>=i;w--)
+       {
+         System.out.print(" ");
+        }	
+       for(int j=1;j<=i;j++)
+        {
+         System.out.print((char)k+" ");
+         }
+       k++;
+       System.out.println();
+       }
+    }
+}
+
+
+
+Q.14.
+======
+/*
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+*/
+class P14
+{
+ public static void main(String[] args)
+  {
+    for(int i=5;i>=1;i--)
+     {
+       for(int j=1;j<=i;j++)
+         {
+           System.out.print(j+" ");
+         }
+      System.out.println();
+     }
+   } 
+}
+
+
+
+Q.1.
+======
+/*
+*
+**
+***
+****
+*****
+*/
+class Sp1
+{
+ public static void main(String[] args)
+  {
+   for(int i=1;i<=5;i++)
+    {
+      for(int j=1;j<=i;j++)
+        {
+          System.out.print("*");
+        }
+     System.out.println();
+     }
+   }	
+}
+
+
+Q.2.
+=====
+/*
+     *
+    **
+   ***
+  ****
+ *****
+*/
+class Sp2
+{
+ public static void main(String[] args)
+  {
+    for(int i=1;i<=5;i++)
+     {
+       for(int k=5;k>=i;k--)
+       {
+         System.out.print(" ");
+       }
+       for (int j=1;j<=i;j++)
+       {
+         System.out.print("*");
+       }	
+     System.out.println();			
+     }
+   }
+}
+
+
+Q.3.
+=====
+/*
+*****
+****
+***
+**
+*
+*/
+class Sp3
+{
+ public static void main(String[] args)
+  {
+    for(int i=5;i>=1;i--)
+      {
+       for (int j=1;j<=i;j++)
+        {
+          System.out.print("*");
+        }	
+       System.out.println();			
+      }
+   }
+}
+
+
+Q.4.
+=====
+/*
+*****
+ ****
+  ***
+   **
+    *
+*/
+class Sp4
+{
+ public static void main(String[] args)
+  {
+    for(int i=5;i>=1;i--)
+      {
+       for (int s=4;s>=i;s--)
+        {
+          System.out.print(" ");
+        }
+       for (int j=1;j<=i;j++)
+        {
+         System.out.print("*");
+        }	
+     System.out.println();			
+      }
+   }
+}
+
+
+Q.5.
+=====
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*/
+class Sp5
+{
+ public static void main(String[] args)
+  {
+   for(int i=1;i<=9;i++)
+    {
+     for(int p=9;p>=i;p--)
+      {
+        if(p%2==0)
+         {
+           System.out.print(" ");
+         }
+       }
+			
+       for (int j=1;j<=i;j++)
+        {
+          if(i%2!=0)
+            {
+	System.out.print("*");
+            }
+         }
+			
+          if(i%2==0) 
+          {	
+            System.out.println();
+          }		
+		
+       }
+     }
+}
+
+
+
+Q.6.
+=====
+/*
+*********
+ *******
+  *****
+   ***
+    *
+*/	
+class Sp6
+{
+ public static void main(String[] args)
+  {
+    for(int i=9;i>=1;i--)
+     {
+        for(int l=i;l<=9;l++)
+         {
+          if(l%2==0)
+           {
+             System.out.print(" ");
+           }
+          }		
+         for (int j=1;j<=i;j++)
+          {
+           if(i%2!=0)
+            {
+	System.out.print("*");}
+            }
+          if(i%2==0)
+           {	
+            System.out.println();
+           }		
+       }
+   }
+}
+
+
+Q.7.
+=====
+/*
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+*/	
+class Sp7
+{
+ public static void main(String[] args)
+  {
+    for(int i=1;i<=9;i++)
+     {
+       for(int k=9;k>=i;k--)
+        {
+          if(k%2==0)
+          {
+           System.out.print(" ");
+          }
+        }
+       for(int j=1;j<=i;j++)
+        {
+          if(i%2!=0)
+          {
+            System.out.print("*");
+          }
+         }
+        if(i%2==0)
+         {  
+          System.out.println(); 
+         }  
+        }
+		
+		 
+      for(int i=8;i>=1;i--)
+       {
+        for(int k=i;k<=8;k++)
+         {
+           if(k%2==0)
+            {
+	System.out.print(" ");
+            }
+          }
+       for(int j=1;j<=i;j++)
+        {
+          if(i%2!=0)
+           {
+             System.out.print("*");
+           }
+		   
+         }
+        if(i%2==0)
+         {  
+          System.out.println(); 
+         }  
+       }
+   } 
+}
+
+
+
+Q.8.
+======
+/*
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+*/
+class Sp8
+{
+ public static void main(String[] args)
+  {
+   for(int i=1;i<=5;i++)
+    {
+      for(int j=1;j<=i;j++)
+       {
+         System.out.print("*");
+       }
+    System.out.println();	
+     }
+		
+    for(int i=4;i>=1;i--)
+     {
+      for(int j=1;j<=i;j++)
+       {
+        System.out.print("*");
+       }
+     System.out.println();	
+     }
+   }
+}
+
+
+
+Q.9.
+=====
+/*
+     *
+    **
+   ***
+  ****
+ *****
+  ****
+   ***
+    **
+     *
+*/	 
+class Sp9
+{
+ public static void main(String[] args)
+  {
+    for(int i=1;i<=5;i++)
+     {
+      for(int k=5;k>=i;k--)
+       {
+         System.out.print(" ");
+       } 
+       for(int j=1;j<=i;j++)
+       {
+        System.out.print("*");
+       }
+     System.out.println();	
+     }
+		
+    for(int i=4;i>=1;i--)
+     {
+      for(int w=5;w>=i;w--)
+       {
+        System.out.print(" ");
+       }
+       for(int j=1;j<=i;j++)
+        {
+          System.out.print("*");
+        }
+      System.out.println();	
+      }
+    }
+}
+
+
+
+Q.10.
+======
+/*
+     *****
+    *****
+   *****
+  *****
+ *****
+*/
+class Sp10
+{
+ public static void main(String[] args)
+  {
+   for(int i=1;i<=5;i++)
+    {
+     for(int l=5;l>=i;l--)
+      {
+         System.out.print(" ");
+      }
+     for(int j=1;j<=5;j++)
+      {
+         System.out.print("*");
+      }
+   System.out.println();   
+    }
+  }
+}
+
+
+
+Q.11.
+======
+ *****
+  *****
+   *****
+    *****
+     *****
+
+class Sp11
+{
+ public static void main(String[] args)
+  {
+   for(int i=1;i<=5;i++)
+    {
+     for(int l=1;l<=i;l++)
+      {
+        System.out.print(" ");
+      }
+     for(int j=1;j<=5;j++)
+      {
+       System.out.print("*");
+      }
+    System.out.println();   
+    }
+  }
+}
+
+
+
+Q.12.
+======
+/*
+*****
+****
+***
+**
+*
+**
+***
+****
+*****
+*/
+class Sp12
+{
+ public static void main(String[] args)
+  {
+    for(int i=1;i<=4;i++)
+     {
+      for(int j=i; j<=5;j++)
+       {
+         System.out.print("*");
+        }
+     System.out.println();	
+      }
+		
+     for(int i=1;i<=5;i++)
+      {
+        for(int j=1; j<=i;j++)
+          {
+           System.out.print("*");
+          }
+       System.out.println();	
+       }
+   }
+}
+
+
+
+Q.13.
+========
+/*
+ *****
+  ****
+   ***
+    **
+     *
+    **
+   ***
+  ****
+ *****
+*/
+class Sp13
+{
+ public static void main(String[] args)
+ {
+  for(int i=1;i<=4;i++)
+   {
+    for(int l=1; l<=i;l++)
+     {
+       System.out.print(" ");
+      }
+    for(int j=i; j<=5;j++)
+     {
+       System.out.print("*");
+     }
+   System.out.println();	
+   }
+		
+   for(int i=1;i<=5;i++)
+    {
+     for(int s=5; s>=i;s--)
+      {
+       System.out.print(" ");
+      }
+     for(int j=1; j<=i;j++)
+      {
+       System.out.print("*");
+      }
+    System.out.println();	
+    }
+  }
+}
+
+
+
+Q.14.
+======
+/*
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+*/ 
+class Sp14
+{
+ public static void main(String[] args)
+  {
+    for(int i=5;i>=2;i--)
+      {
+        for(int j=5;j>=i;j--)
+         {
+           System.out.print(" ");
+         }
+        for(int j=i;j>=1;j--)
+         {
+           System.out.print("*"+" ");
+         }
+       System.out.println();	
+       }
+		
+      for(int i=1;i<=5;i++)
+        {
+         for(int j=5;j>=i;j--)
+           {
+             System.out.print(" ");
+           }
+         for(int j=i;j>=1;j--)
+          {
+             System.out.print("*"+" ");
+          }
+         System.out.println();	
+        }
+    }
+}
